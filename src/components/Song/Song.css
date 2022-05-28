@@ -1,0 +1,19 @@
+.song-container {
+  height: 450px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.song-container img {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.song-container h2 {
+  padding: 1rem;
+}

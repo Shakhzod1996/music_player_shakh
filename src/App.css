@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #46517E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.App {
+  display: flex;
+  width: 370px;
+  border-radius: 40px;
+  height: 650px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  transition: all .4s ease;
+  transform: translate(-370px);
+}
+
+.slider-move {
+  transform: translate(0);
+
+}
+
+.player-main {
+  width: 370px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #2F304E;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fff;
+  height: 650px;
+  position: relative;
+}
+
+.player-main > i {
+  position: absolute;
+  font-size: 24px;
+  left: 20px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.player-main > i:hover {
+  transform: scale(1.1);
+}
+
+.library-main {
+  width: 370px;
+  height: 650px;
+  background-color: #2F304E;
+  color: #fff;
+  position: relative;
+  border-radius: 40px;
+}
